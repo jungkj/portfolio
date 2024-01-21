@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react"
-import { Container, Row, Col } from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
+import { useState, useEffect } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import { ArrowRightCircle } from 'react-bootstrap-icons';
 import headerIMG from "../assets/img/header-img.svg";
 
 export const Banner = () => {
@@ -49,7 +49,7 @@ export const Banner = () => {
                 <Row className = "align-items-center">
                     <Col xs={12} md={6} xl={7}>
                         <span className = "taglin"> Welcome to my portfolio </span>
-                        <h1>{"Hello, I'm Andy Jung"}<span className = "wrap">{text}</span></h1>
+                        <h1>{"Hello, I'm Andy Jung "}<span className = "wrap">{text}</span></h1>
                         <p>Hi! I am an upcoming 2024 graduate coming out of Boston College studying Finance, Computer Science, and Information Systems. I specialize in backend development.</p>
                         <button onClick = {() => console.log('connect')}> Let's Connect! <ArrowRightCircle size={25}/></button>
                     </Col>
