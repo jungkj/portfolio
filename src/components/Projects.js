@@ -1,3 +1,5 @@
+
+import projImg4 from "../assets/img/Budget app 1.png"
 export const Projects = () => {
     
     const projects = [
@@ -17,12 +19,18 @@ export const Projects = () => {
         },
         {
             title: "Stock Market Sentiment Bot",
-            description: "",
-            technologies: "", 
+            description: "Used Twitter Developer API to evaluate over 500,000 tweets per month to generate sentiment score on market with 85% accuracy. Equipped Bot with natural language processing (NLP) to convert raw data into market sentiment.",
+            technologies: "Python, NLP, Web Scraping", 
             imgURL: projImg3,
+        },
+        {
+            title: "Budget Badger",
+            description: "Designed and developed Budget Badger, a gamified budgeting web-app tailored for college students, allowing for budgeting to become fun and rewarding. Deployed the app to fellow students and gained 100+ student users in one week.",
+            technologies: "React, JavaScript, Bootstrap, MongoDB, CSS",
+            imgURL: projImg4,
         }
     ]
     return (
-
-    )
+        
+    ) 
 }
