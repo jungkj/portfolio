@@ -6,8 +6,6 @@ import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 
 export const Footer = () => {
-    
-    
     return ( 
         <footer className = "footer">
             <Container>
@@ -18,8 +16,11 @@ export const Footer = () => {
                     </Col>
                     <Col sm = {6} className = "text-center text-sm-end">
                         <div clasName = "social-icon">
-                            <a href = ""><img src = {}/> </a>
+                            <a href = "#"><img src = {navIcon1} alt = "Icon"/> </a>
+                            <a href = "#"><img src = {navIcon2} alt = "Icon"/> </a>
+                            <a href = "#"><img src = {navIcon3} alt = "Icon"/> </a>
                         </div>
+                        <p>CopyRight 2024. All Rights Reserved Andy Jung.</p>
                     </Col>
                 </Row>
             </Container>
