@@ -1,7 +1,8 @@
+// Using react's carousel library
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Container, Row, Col } from "react-bootstrap";
-// Using react's carousel library
+
 
 // Asset imports
 import meter1 from "../assets/img/meter1.svg";
@@ -9,7 +10,11 @@ import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
 import colorSharp from "../assets/img/color-sharp.png";
 
+import arrow1 from "../assets/img/arrow1.svg";
+import arrow2 from "../assets/img/arrow2.svg";
+
 export const Skills = () =>{
+    // Responsive for different sized screens
     const responsive = {
         superLargeDesktop: {
           breakpoint: { max: 4000, min: 3000 },
@@ -31,39 +36,35 @@ export const Skills = () =>{
 
       return (
         <section classsName = "skill" id = "skills">
-            <Container>
-                <Row>
-                    <Col>
+            <div className = "container">
+                <div className ="row">
+                    <div className = "col-12">
                         <div classname = "skill-bx wow zoomIn">
-                            <h2>
-                                Skills
-                            </h2>   
-                            <p>
-                                Test Text
-                            </p>
-                            <Carousel responsive = {responsive} infinite = {true} className = "skill-slider">
+                            <h2>Skills</h2>   
+                            <p>Test Text</p>
+                            <Carousel responsive = {responsive} infinite = {true} className = "owl-carousel owl-theme skill-slider">
                                 <div className = "item">
-                                    <img src = {meter1} alt = "Image 1"/>
-                                    <h5> Web Development</h5>
+                                    {/* <img src = {meter1} alt = "Image 1"/> */}
+                                    <h5> Web Development </h5>
                                 </div>
                                 <div className = "item">
-                                    <img src = {meter2} alt = "Image 2"/>
-                                    <h5> Brand Identity</h5>
+                                    {/* <img src = {meter2} alt = "Image 2"/> */}
+                                    <h5> Systems Engineer </h5>
                                 </div>
                                 <div className = "item">
-                                    <img src = {meter3} alt = "Image 3"/>
-                                    <h5> Logo Design</h5>
+                                    {/* <img src = {meter3} alt = "Image 3"/> */}
+                                    <h5> NetApp </h5>
                                 </div>
                                 <div className = "item">
-                                    <img src = {meter1} alt = "Image 1"/>
-                                    <h5> Backend Development</h5>
+                                    {/* <img src = {meter1} alt = "Image 1"/> */}
+                                    <h5> Backend Development </h5>
                                 </div>
                             </Carousel>
                         </div>
-                    </Col>
-                </Row>
-            </Container>
-            <img className = "background-image" src = {colorSharp} alt = "background"/>
+                    </div>
+                </div>
+            </div>
+            <img className = "background-image-left" src = {colorSharp} alt = "background"/>
         </section>
       )
     }
