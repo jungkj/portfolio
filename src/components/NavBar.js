@@ -4,10 +4,10 @@ import logo from '../assets/img/logo.png';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
-// import { HashLink } from 'react-router-hash-link';
-// import {
-//   BrowserRouter as Router
-// } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
+import {
+  BrowserRouter as Router
+} from "react-router-dom";
 
 export const NavBar = () => {
 
@@ -33,7 +33,7 @@ export const NavBar = () => {
   }
 
   return (
-    // <Router>
+    <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
@@ -50,17 +50,17 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#"><img src={navIcon1} alt="" /></a>
-                <a href="#"><img src={navIcon2} alt="" /></a>
+                <a href="https://www.linkedin.com/in/ki-hwan-andy-jung/" target = "_blank"><img src={navIcon1} alt="" /></a>
+                <a href="https://github.com/jungkj" target = "_blank"><img src={navIcon2} alt="" /></a>
                 <a href="#"><img src={navIcon3} alt="" /></a>
               </div>
-              {/* <HashLink to='#connect'>
+               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
-              </HashLink> */}
+              </HashLink> 
             </span>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    // </Router>
+    </Router>
   )
 }

@@ -11,6 +11,7 @@ export const Banner = () => {
     const toRotate = ["Web Developer", "Systems Developer", "Backend Engineer"];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
+    const [index, setIndex] = useState(1);
     // Period of time in intervals for text
     const period = 2000;
 
@@ -37,12 +38,16 @@ export const Banner = () => {
 
         if (!isDeleting && updatedText === fullText){
             setIsDeleting(true);
+            setIndex(prevIndex => prevIndex - 1);
             setDelta(period);
         } // Means it is completely deleted 
         else if (isDeleting && updatedText === ''){
             setIsDeleting(false);
             setLoopNum(loopNum + 1);
+            setIndex(1);
             setDelta(500);
+        } else {
+            setIndex(prevIndex => prevIndex + 1);
         }
     }
 
