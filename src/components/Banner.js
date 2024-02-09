@@ -59,7 +59,7 @@ export const Banner = () => {
                         <TrackVisibility>
                         {({ isVisible }) => 
                         <div className = {isVisible ? "animate__animated animate__fadeIn" : ""}>
-                            <span className = "taglin"> Welcome to my portfolio </span>
+                            <span className = "tagline"> Welcome to my portfolio </span>
                             <h1>{"Hi, I'm Andy Jung, "}<span className = "wrap">{text}</span></h1>
                             <p>I am an upcoming 2024 graduate coming out of Boston College studying Finance, Computer Science, and Information Systems. I specialize in backend development.</p>
                             <button onClick = {() => console.log('connect')}> Let's Connect! <ArrowRightCircle size={25}/></button>
