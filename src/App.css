@@ -468,7 +468,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: auto;
   word-wrap: break-word;
   padding:10px;
-  text-decoration: none;
+  color: white;
 }
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
