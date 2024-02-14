@@ -418,8 +418,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
-  width: 300px;
-  height: 300px;
+  width: 450px;
+  height: 600px;
   cursor: pointer;
 }
 .proj-link{
