@@ -36,7 +36,7 @@ export const Projects = () => {
         },
         {
             title: "Budget Badger",
-            description: "Designed and developed Budget Badger, a gamified budgeting web-app tailored for college students, allowing for budgeting to become Mfun and rewarding. Deployed the app to fellow students and gained 100+ student users in one week.",
+            description: "Designed and developed Budget Badger, a gamified budgeting web-app tailored for college students, allowing for budgeting to become fun and rewarding. Deployed the app to fellow students and gained 100+ student users in one week.",
             technologies: "React, JavaScript, Bootstrap, MongoDB, CSS",
             imgURL: projImg4,
             URL: "https://budget-badger.glitch.me/"
