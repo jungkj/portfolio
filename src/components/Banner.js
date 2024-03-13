@@ -52,7 +52,9 @@ export const Banner = () => {
     }
 
     return (
+
         <section className = "banner" id = "home">
+        <title>Andy Jung</title>
             <Container>
                 <Row className = "align-items-center">
                     <Col xs={12} md={6} xl={7}>
